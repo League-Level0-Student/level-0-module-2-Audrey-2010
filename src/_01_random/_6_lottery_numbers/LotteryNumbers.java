@@ -6,6 +6,7 @@ public class LotteryNumbers {
 	public static void main(String[] args) {
 
 		Random random = new Random();
+		
 
 		int randomMaker = random.nextInt(101);
 		int randomMaker2 = random.nextInt(101);
