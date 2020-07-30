@@ -22,12 +22,12 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
-		
-
-	}
+for(int guess=9999999;guess>0;guess--) {		
+tryCode(guess);
+}}
 
 	static void tryCode(int guess) {
-		System.out.println("trying " + guess);
+		System.out.println("trying " + guess+"...");
 
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
 
@@ -39,13 +39,14 @@ public class SafeCracker {
 	}
 
 	private static void playTheSoundOfSuccess() {
-		try {
-			AudioClip sound = JApplet.newAudioClip(SafeCracker.class.getResource("me-gusta.wav"));
-			sound.play();
-			Thread.sleep(3400);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
+		System.out.println("SUCCESS");
+//		try {
+//			AudioClip sound = JApplet.newAudioClip(SafeCracker.class.getResource("me-gusta.wav"));
+//			sound.play();
+//			Thread.sleep(3400);
+//		} catch (Exception ex) {
+//			ex.printStackTrace();
+//		}
 	}
 
 	final static int wekncrzpasfdkjhcfjse = new Random().nextInt(100);

@@ -44,7 +44,7 @@ if (randomNumber==2) {
 
 	// 7. If the random number is 3
 if (randomNumber==3) {
-	JOptionPane.showMessageDialog(null, "Not working right now, ask again later");
+	JOptionPane.showMessageDialog(null, "Reply hazy, try again later");
 }
 	// -- write your own answer
 

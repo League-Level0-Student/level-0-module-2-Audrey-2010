@@ -17,10 +17,52 @@ public class AnimalFarm {
 	public static void main(String[] args) {
 			
 		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
-			
+		String animal=JOptionPane.showInputDialog("Which animal do you want?");
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		if (animal.equals("Cow")) {
+			
+			System.out.println("Moo");
+			playMoo();
+			
+			
+		}
+		else if (animal.equals("Duck")) {
+			
+			System.out.println("Quack");
+			playQuack();
+			
+			
+		}
+else if (animal.equals("Dog")) {
+			
+			System.out.println("Woof!");
+			
+			playWoof();
+			
+		}
+else if (animal.equals("Cat")) {
+	
+	System.out.println("Meow");
+	playMeow();
+	
+	
+}
+	
+else if (animal.equals("Llama")) {
+	
+	System.out.println("...What does the llama say?");
+playLlama();
+}
+	
+	else {
+	System.out.println("Say Cow, Duck, Dog, Cat, or Llama");	
 	}
+	}
+	
+
+	
+	
+	
 
 	static void playMoo() {
 		playNoise(mooFile);
@@ -51,12 +93,13 @@ public class AnimalFarm {
 	/* Ignore this stuff */
 	
 	public static void playNoise(String soundFile) {
-		try {
-			AudioClip sound = JApplet.newAudioClip(AnimalFarm.class.getResource(soundFile));
-			sound.play();
-			Thread.sleep(3400);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
+		System.out.println(soundFile);
+//		try {
+//			AudioClip sound = JApplet.newAudioClip(AnimalFarm.class.getResource(soundFile));
+//			sound.play();
+//			Thread.sleep(3400);
+//		} catch (Exception ex) {
+//			ex.printStackTrace();
+//		}
 	}
 }
