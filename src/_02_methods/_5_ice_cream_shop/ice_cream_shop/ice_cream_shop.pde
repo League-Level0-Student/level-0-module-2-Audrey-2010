@@ -14,7 +14,10 @@ addScoop("vanilla");
 addScoop("chocolate");
 addScoop("strawberry");
      // Use the method provided to add some sprinkles to your ice cream
-addSprinkle(10);
+addSprinkle(30);
+fill(#FF0000);
+stroke(0.2);
+ellipse(250,50,40,40);
 
 }
 
